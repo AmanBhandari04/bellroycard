@@ -1,94 +1,110 @@
 /* main product  card  */
-.card-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    gap: 10px;
-    background-color: rgba(250, 253, 253, 0.5);
-    border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  gap: 150px;
 }
 
-.card{
-    /* border: 1px solid grey; */
-    width: 350px;
+/* this is the image section of card */
+.card {
+  width: 350px;
 }
-.card-image{
-    width: 100%;
-    height: 200px;
-    background-color: rgba(250, 253, 253, 0);
-    box-shadow: inset;
-    border-radius: 20px;
+.card .card-image-overlay {
+  background-color: rgb(253, 253, 253);
+  top: 0;
+  width: 100px;
+  position: absolute;   
+  height: 23px;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 5px 8px;
+  border-radius: 20px 0 0 0;
 }
-.card-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    border: 1px solid #411c0947;
-    border-bottom: none;
-    border-radius: 20px 20px 0 0; 
 
-}
-.card-content{
-    padding: 10px; 
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-   
-}
-.card-content .card-title{
-    font-size: 18px;
+.card .card-image-overlay h2{
+    color: #3e1d0c;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 10px;
-    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 5px;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(250, 253, 253, 0);
+  box-shadow: inset;
+  border-radius: 20px;
+
+  position: relative;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid #411c0947;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+.card-content {
+  padding: 10px;
+  box-shadow: rgba(0,69, 99, 0.2) 0px 1px 4px 0px;
+  height: 200px;
+}
+.card-content .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
   color: rgba(40, 24, 24, 0.862);
 }
-.card-content .card-price{
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+.card-content .card-price {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
-.card-content .card-price svg{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    color: #411c09;
+.card-content .card-price svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  color: #411c09;
 }
-.card-content .card-description{
-    font-size: 14px;            
-    font-weight: 400;
-    margin-bottom: 10px;
+.card-content .card-description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.card-content .card-button{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
-    color: white;
-    background: #411c09;
-    border: none;
-    padding: 6px;
-    border-radius: 5px;
-    font-size: 12px;
+.card-content .card-button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  background: #411c09;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 /*  this is more color option css */
 
 .morecolor-option {
-    margin-top: 10px;
-    padding: 10px;
-    justify-content: start;
-    gap: 10px;
-    align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
 }
 
 .color {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 50px;
-    cursor: pointer;
-    border: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
 }
-
 
 /*  */
